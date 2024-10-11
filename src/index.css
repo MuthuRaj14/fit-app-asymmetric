@@ -6,19 +6,6 @@
   --green: #77dd79;
 } */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --green: #77dd79;
-  --violet: #7f5af0;
-  --sandal: #fae3cf;
-  --fragBlue: #0a0f24;
-  --red: #ba2233;
-  --orange: #f98603;
-}
-
 * {
   font-size: 25px;
   /* font-family: "Syne Mono", monospace; */
@@ -81,4 +68,17 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green: #77dd79;
+  --violet: #7f5af0;
+  --sandal: #fae3cf;
+  --fragBlue: #0a0f24;
+  --red: #ba2233;
+  --orange: #f98603;
 }

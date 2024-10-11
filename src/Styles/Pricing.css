@@ -1,0 +1,93 @@
+.pricing-fragment {
+    /* margin: 10px; */
+    background-image: url('../images/hero-hero.jpeg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--violet);
+    animation: fade;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    background-color: #030005;
+}
+
+.pricing-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+.pricing-cards {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 50px;
+    align-items: center;
+    color: var(--violet);
+}
+
+.single-pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+    /* background-color: var(--violet); */
+    padding: 10px 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: .2s;
+}
+
+.single-pricing-card:hover {
+    /* backdrop-filter: blur(0); */
+    /* border: 2px solid var(--sandal); */
+    margin-top: -100px;
+}
+
+.plan-head {
+    color: var(--red);
+    align-self: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.pricing-head {
+    background-color: var(--sandal);
+    padding: 5px 30px;
+    color: var(--orange);
+    border-radius: 7px;
+}
+
+.plan-icon {
+    margin-top: 30px;
+    align-self: center;
+    color: var(--sandal);
+}
+
+.join-now-btn {
+    background-color: black;
+    color: var(--sandal);
+    text-align: center;
+    display: inline-block;
+    padding: 5px 30px;
+    border-radius: 7px;
+    cursor: url(../images/mouse_pointer.svg), auto;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.join-now-btn:hover {
+    background-color: var(--red);
+}
+
+li {
+    list-style: square;
+}
+
+/* .premium-plan {
+    margin-top: -100px;
+} */

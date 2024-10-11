@@ -1,0 +1,40 @@
+.calc-fragment {
+    background-color: #030005;
+    animation: load;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    background-image: url('../images/hero.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input {
+    outline: none;
+    border: none;
+    width: 500px;
+}
+
+.msg{
+    color: var(--red);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+button {
+    color: var(--green);
+    transition: .2s;
+}
+
+button:hover {
+    background-color: var(--orange);
+}
+
+.calc-bg {
+    /* background-color: var(--violet); */
+    background-color: transparent;
+}
+
+.calc-text {
+    color: var(--sandal);
+}

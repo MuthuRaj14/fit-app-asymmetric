@@ -1,0 +1,114 @@
+.service-fragment {
+    background-color: #030005;
+    color: wheat;
+    width: 100%;
+}
+
+.service-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+.service-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/banner.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.top-service-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    width: 100%;
+    color: var(--sandal);
+    line-height: 1.5;
+}
+
+.service-title {
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--violet);
+}
+
+.more-service-btn {
+    background-color: var(--green);
+    color: var(--sandal);
+    padding: 5px 20px;
+}
+
+.service-card {
+    margin-top: 20px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.single-card {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-color: var(--sandal);
+    color: var(--red);
+    padding: 5px 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    text-align: justify;
+    animation: flipCard;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    transition: 2s;
+}
+
+.service-card-title {
+    color: var(--fragBlue);
+    letter-spacing: 7px;
+}
+
+.service-icon {
+    margin-top: 20px;
+}
+
+.service-hover-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+    position: absolute;
+    background-color: var(--violet);
+    color: var(--fragBlue);
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    bottom: 0;
+    text-align: center;
+    transition: .18s;
+
+}
+
+
+.single-card:hover .service-hover-msg {
+    height: 100px;
+    opacity: 1;
+}
+
+.fa-right-long {
+    cursor: url(../images/mouse_pointer.svg), auto;
+}

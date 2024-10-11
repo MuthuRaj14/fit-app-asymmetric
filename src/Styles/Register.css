@@ -1,0 +1,42 @@
+.register-area {
+    position: absolute;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.53);
+    margin: 10px;
+}
+
+.register-fragment {
+    position: relative;
+    animation: load;
+    /* animation: fade; */
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    font-size: 20px;
+}
+
+.submit-btn {
+    background-color: var(--red);
+    outline: none;
+    border: none;
+    cursor: url(../images/mouse_pointer.svg), auto;
+}
+
+.submit-btn:hover {
+    background-color: var(--green);
+}
+
+.register-content {
+    color: var(--sandal);
+}
+
+label {
+    color: var(--violet);
+    display: inline-block;
+}
+
+.form-input {
+    width: 650px;
+    background-color: transparent;
+    border-bottom: 2px solid var(--sandal);
+    color: var(--sandal);
+}

@@ -1,0 +1,133 @@
+.gallery-fragment {
+    background-color: #030005;
+    /* position: relative; */
+    width: 100%;
+}
+
+.gallery-area {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    width: 100%;
+    overflow-x: scroll;
+    animation: fade;
+    /* animation: fade; */
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+}
+
+
+
+.part-1 {
+    position: relative;
+    animation: load;
+    /* animation: fade; */
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+}
+
+.part-2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    animation: load;
+    /* animation: fade; */
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+    position: relative;
+}
+
+.part-3 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    animation: load;
+    /* animation: fade; */
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+    position: relative;
+}
+
+.part-1-img {
+    width: 850px;
+}
+
+.gallery-img {
+    height: 385px;
+    width: 400px;
+    object-fit: cover;
+}
+
+
+
+.gallery-head {
+    background-color: var(--violet);
+    display: inline-block;
+    padding: 5px 50px;
+    margin-left: 30px;
+}
+
+.gallery-popup {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    font-weight: bold;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    transition: .5s;
+}
+
+.part-1:hover .gallery-popup {
+    height: 100%;
+
+}
+
+.subpart {
+    position: relative;
+}
+
+.subpart:hover .gallery-popup {
+    height: 100%;
+}
+
+.popup-head {
+    font-size: 40px;
+    color: var(--sandal);
+}
+
+.popup-title {
+    color: var(--violet);
+}
+
+.popup-icon {
+    color: var(--green);
+}
+
+.gallery-area::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+.gallery-area::-webkit-scrollbar-track {
+    background: var(--violet);
+}
+
+.gallery-area::-webkit-scrollbar-thumb {
+    background: var(--green);
+}
+
+.gallery-area::-webkit-scrollbar-thumb:hover {
+    background: var(--green);
+}

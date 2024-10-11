@@ -1,0 +1,10 @@
+.footer {
+    background: linear-gradient(135deg, #b19cd7, #ff6962, #77dd79);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+    padding: 30px;
+    animation: fade;
+    /* animation: fade; */
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}

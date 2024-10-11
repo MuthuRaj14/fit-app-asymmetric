@@ -1,0 +1,68 @@
+/* :root {
+    --green: #ba2233;
+    --orange: #f98603;
+    --sandal: #fae3cf;
+    --fragBlue: #0a0f24;
+} */
+
+.navbar-fragment {
+    background-color: #030005;
+}
+
+
+video {
+    width: 100%;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    color: var(--sandal);
+}
+
+.left-nav {
+    color: var(--fragBlue);
+    font-weight: bold;
+}
+
+.right-nav a{
+    color: var(--green);
+    text-decoration: none;
+}
+
+.nav-links {
+    color: var(--sandal);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+video{
+    animation: load 1s;
+}
+
+.banner-area {
+    position: relative;
+    /* background-image: url('../images/banner.webp');
+    min-height: 120vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fade 1s; */
+}
+
+.team-name {
+    color: var(--violet);
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 170px;
+    margin-left: 20px;
+    color: var(--green);
+    font-weight: bolder;
+    font-size: 5vw;
+    animation: load 1s;
+}
